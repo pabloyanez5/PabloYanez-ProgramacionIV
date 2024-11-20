@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppTaller.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppTaller"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MauiAppTaller">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <FlyoutItem Title="Mainpage">
+        <ShellContent
+           Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="Mainpage"  />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Página 1">
+       <ShellContent
+            Title="Página 1"
+            ContentTemplate="{DataTemplate local:NewPage1}"
+            Route="NewPage1"  />       
+    </FlyoutItem>
+
+    <FlyoutItem Title="Página 2">
+        <ShellContent
+        Title="Página 2"
+        ContentTemplate="{DataTemplate local:NewPage2}"
+        Route="NewPage2"  />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Página 3">
+        <ShellContent
+        Title="Página 3"
+        ContentTemplate="{DataTemplate local:NewPage3}"
+        Route="NewPage3"  />
+    </FlyoutItem>
+
+
+    <TabBar>
+        <Tab Title="MainPage" Icon="dotnet_bot.png">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage"  />
+        </Tab>
+    </TabBar>
+
+
+</Shell>

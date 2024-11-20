@@ -1,0 +1,1 @@
+D:\PY2\MauiAppTaller\MauiAppTaller\MauiAppTaller.csproj;x64
